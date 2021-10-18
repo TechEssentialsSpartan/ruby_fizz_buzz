@@ -36,3 +36,18 @@ jobs:
         SLACK_TITLE: ふぉ〜〜〜
         SLACK_USERNAME: レビューBot
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+  failure_notify:
+    if: failure()
+    needs: [test, lint]
+    runs-on: ubuntu-latest
+    steps:
+    - name: slack notify
+      uses: rtCamp/action-slack-notify@v2
+      env:
+        SLACK_CHANNEL: times_だいそん
+        SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
+        SLACK_ICON: https://github.com/rtCamp.png?size=48
+        SLACK_MESSAGE: アウト
+        SLACK_TITLE: だいそん
+        SLACK_USERNAME: レビューBot
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
