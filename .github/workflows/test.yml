@@ -24,9 +24,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: slack notify
-      run: |
-        echo ${{ github.actor }}
-        echo ${{ github.repository }}
+      # run: |
+      #   echo ${{ github.actor }}
+      #   echo ${{ github.repository }}
       uses: rtCamp/action-slack-notify@v2
       env:
         SLACK_CHANNEL: times_だいそん
