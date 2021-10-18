@@ -13,5 +13,5 @@ jobs:
         run: bundle install
       - name: Run tests
         run: ruby test/fizz_buzz_test.rb
-      - name Run lint
+      - name: Run lint
         run: bundle exec rubocop
