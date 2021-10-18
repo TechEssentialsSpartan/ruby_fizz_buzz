@@ -30,7 +30,7 @@ jobs:
       uses: rtCamp/action-slack-notify@v2
       env:
         SLACK_CHANNEL: times_だいそん
-        SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
+        SLACK_COLOR: 'good' # or a specific color like 'good' or '#ff00ff'
         SLACK_ICON: https://github.com/rtCamp.png?size=48
         SLACK_MESSAGE: いえーい
         SLACK_TITLE: ふぉ〜〜〜
@@ -45,7 +45,7 @@ jobs:
       uses: rtCamp/action-slack-notify@v2
       env:
         SLACK_CHANNEL: times_だいそん
-        SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
+        SLACK_COLOR: 'danger' # or a specific color like 'good' or '#ff00ff'
         SLACK_ICON: https://github.com/rtCamp.png?size=48
         SLACK_MESSAGE: アウト
         SLACK_TITLE: だいそん
