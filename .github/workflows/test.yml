@@ -1,0 +1,17 @@
+name: test and lint
+on: [push]
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@477b21f02be01bcb8030d50f37cfec92bfa615b6
+      - name: Install dependencies
+        run: bundle install
+      - name: Run tests
+        run: ruby test/fizz_buzz_test.rb
+      - name Run lint
+        run: bundle exec rubocop
