@@ -19,3 +19,14 @@ jobs:
         run: bundle install
       - name: Run lint
         run: bundle exec rubocop
+  success_notify:
+    needs: [test, lint]
+    runs-on: ubuntu-latest
+    steps:
+    - name: slack notify
+      run: echo success
+      # uses: rtCamp/action-slack-notify@v2.1.3
+      # env:
+      #   SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+      #   SLACK_MESSAGE: 'Post Content :rocket:'
+      #   SLACK_CHANNEL: ci
