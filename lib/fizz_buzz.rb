@@ -1,13 +1,12 @@
 def fizz_buzz(number)
   num = number.to_i
-
   if num % 15 == 0
-    'Fizz Buzz'
+    puts "Fizz Buzz"
   elsif num % 5 == 0
-    'Buzz'
+    puts "Buzz"
   elsif num % 3 == 0
-    'Fizz'
+    puts "Fizz"
   else
-    num.to_s
+    puts num.to_s
   end
 end
