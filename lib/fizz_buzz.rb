@@ -1,11 +1,11 @@
 def fizz_buzz(number)
   num = number.to_i
   if num % 15 == 0
-    "Fizz Buzz"
+    'Fizz Buzz'
   elsif num % 5 == 0
-    "Buzz"
+    'Buzz'
   elsif num % 3 == 0
-    "Fizz"
+    'Fizz'
   else
     num.to_s
   end
