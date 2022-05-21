@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df425284-9c4c-4634-be38-8c43a4105f63" name="変更" comment="">
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/fizz_buzz.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fizz_buzz.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +67,8 @@
       <updated>1653099368517</updated>
       <workItem from="1653099373177" duration="97000" />
       <workItem from="1653099481667" duration="2568000" />
-      <workItem from="1653102190139" duration="3297000" />
+      <workItem from="1653102190139" duration="3531000" />
+      <workItem from="1653109030344" duration="57000" />
     </task>
     <servers />
   </component>
