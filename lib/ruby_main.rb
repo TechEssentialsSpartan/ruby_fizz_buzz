@@ -1,8 +1,9 @@
 # 何本勝負？(press 1 or 3 or 5)
 # 3本勝負を選びました
 
+honsuu = gets.to_i
 puts "何本勝負？(press 1 or 3 or 5)"
-puts "#{gets.to_i}本を選びました"
+puts "#{honsuu}本を選びました"
 
 # 1本目
 # じゃんけん…(press g or c or p)
@@ -12,8 +13,6 @@ puts "#{gets.to_i}本を選びました"
 # 1勝0敗
 
 def jyanken
-    puts "1本目\nじゃんけん…(press g or c or p)"
-
     jyankens = {"g"=>"グー","c"=>"チョキ","p"=>"パー"}
     player_hand = gets
     computer_hand = jyankens.keys.sample
@@ -43,6 +42,30 @@ def jyanken
 
     puts "#{win}勝#{lose}敗"
 end
+
+if honsuu == 1
+    puts "1本目\nじゃんけん…(press g or c or p)"
+    puts jyanken 
+elsif honsuu == 2
+    puts "1本目\nじゃんけん…(press g or c or p)"
+    puts jyanken
+    puts "2本目\nじゃんけん…(press g or c or p)"
+    puts jyanken 
+else 
+    puts "1本目\nじゃんけん…(press g or c or p)"
+    puts jyanken
+    puts "2本目\nじゃんけん…(press g or c or p)"
+    puts jyanken
+    puts "3本目\nじゃんけん…(press g or c or p)"
+    puts jyanken
+end
+
+if win > lose 
+    puts "勝ち！\n#{win}勝#{lose}敗"
+else 
+    puts "負け！\n#{win}勝#{lose}敗"
+end
+
 
 2本目
 じゃんけん…(press g or c or p)
