@@ -10,5 +10,3 @@ def fizz_buzz(number)
     puts number
   end
 end
-
-fizz_buzz(15)
