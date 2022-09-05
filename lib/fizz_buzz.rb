@@ -1,14 +1,14 @@
-def fizz_buzz(number)
+def fizz_buzz(n)
   # 実装してください
-  if number % 15 == 0
+  if n % 15 == 0
     "FizzBuzz"
-  elsif number % 3 == 0
+  elsif n % 3 == 0
     "Fizz"
-  elsif number % 5 == 0
+  elsif n % 5 == 0
     "Buzz"
   else 
-    number
+    n.to_s
   end
 end
 
-puts fizz_buzz(1..100)
+puts fizz_buzz(1)
