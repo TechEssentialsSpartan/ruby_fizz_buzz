@@ -1,14 +1,14 @@
 def fizz_buzz(n)
   # 実装してください
   if n % 15 == 0
-    "FizzBuzz"
+    "Fizz Buzz"
   elsif n % 3 == 0
     "Fizz"
   elsif n % 5 == 0
     "Buzz"
-  else 
+  else
     n.to_s
   end
 end
 
-puts fizz_buzz(1)
+puts fizz_buzz(1..150)
