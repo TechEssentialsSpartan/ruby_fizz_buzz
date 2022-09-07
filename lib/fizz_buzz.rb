@@ -6,6 +6,6 @@ def fizz_buzz(number)
   elsif number % 5 == 0
     'Buzz'
   else
-    'n.to_s'
+    n.to_s
   end
 end
